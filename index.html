@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="eng-us">
+<head>
+    <meta charset="utf-8">
+    <title>The Crystal Gems game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>The Crystal Gems Game!</h1>
+        </div>
+        
+        <div>
+            <h2>Instructions:</h2>
+            <p>1. A random number has appear. Click on each gem button to match the number.</p>
+            <p>2. Each time you win or loose the number will change, but also the gems value!</p>
+        </div>
+
+        <!--This div will hold the random number-->
+        <div id="random-number">
+            
+        </div>
+
+        <!--This div will hold the score, and it will float right from the random div. -->
+        <div id = "score-html">
+            <div >Wins = <p id="wins"></p></div>
+            <div >Looses =<p id="looses"></p></div>
+        </div>
+
+        <!-- This div will hold all the buttons-->
+        <div>
+            <a>
+                <img id="garnet" src="assets/images/garnet.png"></button>
+            </a>    
+            <a>
+                <img id="peridot" src="assets/images/peridot.png"></button>
+            </a>
+            <a>
+                <img id="topaz" src="assets/images/topaz.png"></button>
+            </a>
+            <a>
+                <img id="amethyst" src="assets/images/amethyst.png"></button>
+            </a>    
+        </div>
+        
+        <!--Last but not least, I'll do another div (or card) for the sums of the numbers the gamer is using-->
+        <div id="operator">
+           
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+
+
+</html>
+
+
+
+
