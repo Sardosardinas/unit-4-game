@@ -7,49 +7,64 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
         <div>
-            <h1>The Crystal Gems Game!</h1>
+            <h1 id='titulo'>The Crystal Gems Game!</h1>
         </div>
         
-        <div>
+        <div class="p-3 mb-2 bg-info text-white">
             <h2>Instructions:</h2>
-            <p>1. A random number has appear. Click on each gem button to match the number.</p>
+            <p>1. A random number has appeared. Click on each gem button to match the number.</p>
             <p>2. Each time you win or lose the number will change, but also the gems value!</p>
         </div>
 
-        <!--This div will hold the random number-->
-        <div id="random-number">
-            
-        </div>
-
-        <!--This div will hold the score, and it will float right from the random div. -->
-        <div id = "score-html">
-            <div id="wins">Wins: </div>
-            <div id="losses">Losses: </div>
+        <div id='juego'class="row">
+            <div class="col-md-6">
+                <!--This div will hold the random number-->
+                <div id="random-number">
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!--This div will hold the score, and it will float right from the random div. -->
+                <div id = "score-html">
+                    <div id="wins">Wins: </div>
+                    <div id="losses">Losses: </div>
+                </div>
+            </div>    
         </div>
 
         <!-- This div will hold all the buttons-->
-        <div>
-            <a>
-                <img id="garnet" src="assets/images/garnet.png"></button>
-            </a>    
-            <a>
-                <img id="peridot" src="assets/images/peridot.png"></button>
-            </a>
-            <a>
-                <img id="topaz" src="assets/images/topaz.png"></button>
-            </a>
-            <a>
-                <img id="amethyst" src="assets/images/amethyst.png"></button>
-            </a>    
+        <div id='gemas'class="row">
+            <div class="col-md-3">
+                <a>
+                    <img id="garnet" src="assets/images/garnet.png"></button>
+                </a>    
+            </div>
+            <div class="col-md-3">
+                <a>
+                    <img id="peridot" src="assets/images/peridot.png"></button>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a>
+                    <img id="topaz" src="assets/images/topaz.png"></button>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a>
+                    <img id="amethyst" src="assets/images/amethyst.png"></button>
+                </a>    
+            </div>
         </div>
         
         <!--Last but not least, I'll do another div (or card) for the sums of the numbers the gamer is using-->
-        <div id="operator">
+        <div id='operando'>Operator:</div>
+        <div class="p-3 mb-2 bg-dark text-white" id="operator">
            
         </div>
     </div>

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Lalezar');
+
+body{
+    background-image: url("../images/pink.png") !important;
+}
+
+#titulo{
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+    font-size: 60px;
+    color:#FF0033;
+}
+
+#random-number{
+    font-size: 45px;
+    text-align: center;
+}
+
+#gems{
+    align-content: center;
+}
+
+#juego{
+    margin:30px;
+}
+
+#wins{
+    font-size: 20px;
+    color: green;
+}
+
+#losses{
+    font-size: 20px;
+    color: red;
+}
+
+#operando{
+    font-size: 20px;
+}
+
+#operator{
+    font-size: 20px;
+}
